@@ -1,0 +1,27 @@
+def gallows():
+  gameover = False
+  mistakes = 0
+  structure = ['              ______      ',
+  '             /     |      ',
+  '            /      |      ',
+  '           /       ',
+  '           |      ',
+  '           |       ',
+  '           |       ',
+  '           |       ',
+  '    _______|_________     ']
+  print('\n'.join(structure))
+  piece1 ='O'
+  piece2 ='/'
+  piece3 ='|'
+  piece4 ='\\'
+  piece5 ='|' 
+  piece6 =' /'
+  piece7 ='/'
+  piece8 ='\\'
+  piece9 =' \\'
+  pieces = [piece1, piece2, piece3, piece4, piece5, piece6, piece7, piece8, piece9]
+  while gameover == False:
+    structure = (structure[3] + pieces[1])
+    print('\n'.join(structure))
+    structure = (structure[+1] + pieces[+1])
